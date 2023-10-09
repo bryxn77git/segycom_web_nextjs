@@ -1,0 +1,284 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-family: Montserrat, Robot;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.swiper-wrapper {
+  padding-bottom: 20px !important;
+}
+
+.swiper-pagination {
+  bottom: 0px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8C0712 !important;
+}
+
+.swiper-button-next {
+  color: #8C0712 !important;
+}
+
+.swiper-button-prev {
+  color: #8C0712 !important;
+}
+
+.img-zoom {
+  transition: transform .5s ease;
+}
+
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+.img-zoom-category {
+  transition: transform .5s, filter 0.5s ease;
+  
+}
+
+.img-zoom-category:hover {
+  transform: scale(1.05);
+  filter: blur(2px);
+  transition: transform .5s, filter 0.5s ease-in-out;
+  filter: brightness(50%);
+}
+
+.platform-image {
+  background-color: #8C0712;
+  width: 600px;
+  /* width: 60%; */
+  height: 600px;
+  border-radius: 100% 100% 100% 100%;
+  position: fixed;
+  z-index: -1;
+  top:  -100px;
+  right: -100px;
+  opacity: 0.2;  
+}
+.platform-image-2 {
+  background-color: #8C0712;
+  width: 100%;
+  /* width: 60%; */
+  height: 600px;
+  /* border-radius: 100% 100% 100% 100%; */
+  position: absolute;
+  z-index: -1;
+  top:  200px;
+  left: 0px;
+  opacity: 0.05;  
+}
+
+.imgIphone {
+  max-height: 750px;
+  position: absolute;
+  width: 450px;
+  z-index: 5;
+}
+
+.imgIphone2 {
+  height: 600px;
+  position: absolute;
+  width: 350px;
+  z-index: 5;
+}
+
+.imgScreen {
+  padding-top: 16px;
+  padding-right: 3px;
+  max-height: 735px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.imgScreen2 {
+  padding-top: 15px;
+  padding-right: 2px;
+  max-height: 570px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.imgSwiper {
+  justify-content: center;
+  display: flex;
+}
+
+.imgTeamSegycom {
+  max-width: 210px;
+  border-radius: 50% 50% 50% 50%;
+}
+
+.youtubeVideo {
+  position: 'absolute';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.marcaProduct:hover {
+    text-decoration: underline;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.infoProduct {
+  font-weight: 600;
+  color: #8C0712;
+}
+
+.swiper-slide-hidden {
+  display: none;
+}
+
+
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.descriptionContent {
+  overflow: auto;
+}
+
+.imgBtn:hover {
+  opacity: 0.5;
+}
+.imgMini {
+  width: 50;
+}
+
+.imgProductPrincipal {
+  width: 100%;
+  max-width: 400;
+}
+
+.swiperImgProduct {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fromContact {
+  width: 100%;
+}
+
+.orderView:hover {
+  text-decoration: underline;
+}
+
+/* .center-block */
+/* .specifications img {
+  width: 100%;
+  height: auto;
+  max-width: min-content;
+}
+#iconSpecifications{
+  width: 160px;
+  height: 160px;
+} */
+ /* @media only screen and (max-width: 1036px) {
+  .imgTeamSegycom {
+    width: 200
+  }
+} */
+
+/* @media only screen and (max-width: 1536px) {
+  .platform-image {
+    background-color: #8C0712;
+    width: 70%;
+    height: 600px;
+    border-radius: 0 0 100% 0;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    opacity: 0.08;
+  }
+}
+
+@media only screen and (max-width: 1036px) {
+  .platform-image {
+    background-color: #8C0712;
+    width: 75%;
+    height: 550px;
+    border-radius: 0 0 100% 0;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    opacity: 0.08;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .platform-image {
+    background-color: #8C0712;
+    width: 100%;
+    height: 500px;
+    border-radius: 0 0 100% 0;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.08;
+  }
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
